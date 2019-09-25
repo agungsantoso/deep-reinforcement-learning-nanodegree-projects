@@ -1,4 +1,4 @@
-# Deep Learning Nanodegree Projects
+# Deep Reinforcement Learning Nanodegree Projects
 
 ![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)
 
