@@ -105,7 +105,7 @@ In this project replay buffer size is set to `100,000`. I use `64` minibatch siz
 The image above is a plot of rewards per episode to illustrate that the agent can receive an average reward (over `500` episodes) of `+13`.
 
 <p align="center">
-    <img src="images/episodes.png" width="600">
+    <img src="images/episodes.PNG" width="600">
 </p>
 
 From `Navigation.ipynb` can be seen that the number of episodes needed to solve the environment is 472 episodes.
