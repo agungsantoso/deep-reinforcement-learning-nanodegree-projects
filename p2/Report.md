@@ -1,7 +1,6 @@
 # Project 2: Continous Control
 
 # Learning Algorithm
-The report clearly describes the learning algorithm, along with the chosen hyperparameters. It also describes the model architectures for any neural networks.
 
 ## DDPG (Deep Deterministic Policy Gradient)
 
@@ -43,14 +42,7 @@ Two other interesting aspects of DDPG are first, the use of a replay buffer, and
 
 ### Hyperparameters
 
-* BUFFER_SIZE = int(1e5)  # replay buffer size
-* BATCH_SIZE = 128        # minibatch size
-* GAMMA = 0.99            # discount factor
-* TAU = 1e-3              # for soft update of target parameters
-* LR_ACTOR = 1e-4         # learning rate of the actor 
-* LR_CRITIC = 1e-3        # learning rate of the critic
-* WEIGHT_DECAY = 0        # L2 weight decay
-
+In this project replay buffer size is set to `100,000`. I use `128` minibatch size with `0.99` discount factor. For the soft update of target parameters `0.001` is used. The learning rate for the actor is `0.0001`, for the critic is `0.001` and the L2 weight decay is `0`.
 
 # Plot of Rewards
 
@@ -67,10 +59,8 @@ The image above is a plot of rewards per episode to illustrate the agent is able
 From the image above can be seen that the number of episodes needed to solve the environment is 149 episodes.
 
 # Ideas for Future Work
-The submission has concrete future ideas for improving the agent's performance.
 
-Try to improving the agent's performance using below algorithms:
+For future work I will try to improve the agent's performance using below algorithms:
 
-* A3C (Asynchronous Advantage Actor-Critic)
-* A2C (Advantage Actor-Critic)
-* GAE (Generalized Advantage Estimation)
+* A3C (Asynchronous Advantage Actor-Critic), a conceptually simple and lightweight framework for deep reinforcement learning that uses asynchronous gradient descent for optimization of deep neural network controllers. The best performing method, an asynchronous variant of actor-critic, surpasses the current state-of-the-art on the Atari domain while training for half the time on a single multi-core CPU instead of a GPU. Furthermore, we show that asynchronous actor-critic succeeds on a wide variety of continuous motor control problems as well as on a new task of navigating random 3D mazes using a visual input
+* D4PG (Distributed Distributional Deterministic Policy Gradients), adopts the very successful distributional perspective on reinforcement learning and adapts it to the continuous control setting. It combine this within a distributed framework for off-policy learning and also combine this technique with a number of additional, simple improvements such as the use of N-step returns and prioritized experience replay. Results show that across a wide variety of simple control tasks, difficult manipulation tasks, and a set of hard obstacle-based locomotion tasks the D4PG algorithm achieves state of the art performance.
