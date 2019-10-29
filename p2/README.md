@@ -1,7 +1,6 @@
 # Project 2: Continuous Control
 
 ## Project Details
-The README describes the the project environment details (i.e., the state and action spaces, and when the environment is considered solved).
 
 ### Introduction
 
