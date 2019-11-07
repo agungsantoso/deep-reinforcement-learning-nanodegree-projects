@@ -1,0 +1,5 @@
+* I use code from https://github.com/agungsantoso/deep-reinforcement-learning/tree/master/ddpg-pendulum to create `ddpg_agent.py` (with slight modifications to support multi-agents) and `model.py` 
+* I use README.md from https://github.com/agungsantoso/deep-reinforcement-learning/tree/master/p2_continuous-control to create README.md for this project
+* I use video lectures from Module 3 lesson 5, especially lectures about DDPG to describe DDPG on Report.md
+* I use DDPG Paper (https://arxiv.org/abs/1509.02971) to create DDPG-learning-algorithm.PNG
+* I use A3C Paper (https://arxiv.org/pdf/1602.01783.pdf) and D4PG Paper (https://openreview.net/pdf?id=SyZipzbCb) to describe it on Report.md
